@@ -13,7 +13,6 @@ describe('game-of-life.ts', function () {
 
     describe('initialize the board', function () {
         it('initializes an board without cells', () => {
-            const formattedOutput = "formattedOutput";
             const gameOfLife = new GameOfLife(0, 0);
 
             expect(gameOfLife.currentBoard()).toEqual([]);

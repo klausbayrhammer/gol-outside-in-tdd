@@ -8,6 +8,7 @@ export enum CellState {
 
 export default class GameOfLife {
     private board: CellState[][];
+
     constructor(private length: number, private height: number) {
         this.board = [...Array(height)].map(() =>
             [...Array(length)].map(() => CellState.Dead)
